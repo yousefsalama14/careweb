@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="question" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Path_37" data-name="Path 37" d="M0,0H32V32H0Z" fill="none"/>
+  <path id="Path_38" data-name="Path 38" d="M15,27h0A12,12,0,0,1,3,15H3A12,12,0,0,1,15,3h0A12,12,0,0,1,27,15h0A12,12,0,0,1,15,27Z" transform="translate(1 1)" fill="#2391ea" stroke="#0f4478" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Path_39" data-name="Path 39" d="M12.667,15.056v-.333a2.5,2.5,0,0,1,1.348-2.133A2.449,2.449,0,0,0,15.333,10.5,2.667,2.667,0,1,0,10,10.5" transform="translate(3.333 2.611)" fill="none" stroke="#0f4478" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Path_40" data-name="Path 40" d="M12.082,16a.333.333,0,1,0,.335.333A.331.331,0,0,0,12.082,16" transform="translate(3.917 5.333)" fill="none" stroke="#0f4478" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

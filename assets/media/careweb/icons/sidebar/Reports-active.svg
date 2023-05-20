@@ -1,0 +1,9 @@
+<svg id="Group_17" data-name="Group 17" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="task-list-document-text">
+    <path id="Path_28" data-name="Path 28" d="M0,0H32V32H0Z" fill="none"/>
+    <path id="Path_30" data-name="Path 30" d="M9.333,4H6.667A2.666,2.666,0,0,0,4,6.667V24a2.666,2.666,0,0,0,2.667,2.667h16A2.666,2.666,0,0,0,25.333,24V6.667A2.666,2.666,0,0,0,22.667,4H20" transform="translate(1.333 1.333)" fill="#2391ea" stroke="#0f4478" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_29" data-name="Path 29" d="M8,4.667,9.733,2.5A1.334,1.334,0,0,1,10.775,2h5.119a1.334,1.334,0,0,1,1.041.5l1.732,2.167h0V6a1.334,1.334,0,0,1-1.333,1.333h-8A1.334,1.334,0,0,1,8,6V4.667Z" transform="translate(2.667 0.667)" fill="#2391ea" stroke="#0f4478" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_31" data-name="Path 31" d="M8,11H18.667" transform="translate(2.667 3.667)" fill="none" stroke="#0f4478" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_32" data-name="Path 32" d="M8,16H18.667" transform="translate(2.667 5.333)" fill="none" stroke="#0f4478" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
