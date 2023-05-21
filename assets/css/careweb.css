@@ -1,3 +1,9 @@
+/***** Main *****/
+:root {
+    --bs-app-sidebar-width: 320px;
+}
+
+/***** End Main *****/
 /***** Header *****/
 [data-kt-app-header-fixed=true][data-kt-app-sidebar-fixed=true][data-kt-app-sidebar-push-header=true] .app-header,
 [data-kt-app-header-fixed=true][data-kt-app-sidebar-sticky=on][data-kt-app-sidebar-push-header=true] .app-header {
@@ -35,88 +41,146 @@
 
 /***** End Header *****/
 /***** Sidebar *****/
+[data-kt-app-layout=light-sidebar] .app-sidebar {
+    width: 320px;
+}
 
-[data-kt-app-layout=light-sidebar] .app-sidebar .menu {
-    position: fixed;
-    top: 80px;
+[data-kt-app-sidebar-minimize="on"] .app-sidebar {
+    width: 80px;
+}
+
+[data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu {
+    position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     z-index: 101;
-    width: 75px;
+    width: 80px;
     overflow-y: auto;
 }
 
 @media (min-width: 991.98px) {
     [data-kt-app-layout=light-sidebar] .app-sidebar {
         top: 70px;
+        ;
+    }
+
+    [data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu {
+        height: calc(100% - 70px);
     }
 }
 
 @media (min-width: 992px) {
     [data-kt-app-sidebar-minimize=on]:not([data-kt-app-sidebar-hoverable=true]) .app-sidebar .app-sidebar-wrapper {
-        width: auto;
-        margin-top: 6px !important;
+        /* width: auto; */
+        /* margin-top: 6px !important; */
     }
 }
 
-[data-kt-app-layout=light-sidebar] .app-sidebar .menu .menu-item .menu-link {
+[data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link {
     border-radius: 0.475rem;
     flex-direction: column;
 }
 
-.menu-item .menu-link .menu-title {
+[data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link .menu-title {
     opacity: 1 !important;
     margin-top: 5px;
 }
+
+[data-kt-app-layout=light-sidebar] .app-sidebar .menu .menu-item .menu-link .menu-title {
+    color: #818A93;
+}
+
+[data-kt-app-layout=light-sidebar] .app-sidebar .menu .menu-item .menu-link:hover .menu-title,
+[data-kt-app-layout=light-sidebar] .app-sidebar .menu .menu-item .menu-link:active .menu-title {
+    color: #01070D;
+}
+
 @media (max-width: 992px) {
-    [data-kt-app-layout=light-sidebar] .app-sidebar{
+    /* [data-kt-app-layout=light-sidebar] .app-sidebar {
         width: 70px !important;
-    }
-    [data-kt-app-layout=light-sidebar] .app-sidebar .menu{
+    } */
+
+    [data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu {
         top: 24px;
     }
 }
+
 /***** End Sidebar *****/
+/***** Second menu *****/
+.app-sidebar .second-menu {
+    margin-left: 80px;
+    padding: 0 15px;
+}
+
+.app-sidebar .second-menu .menu-item .menu-link {
+    padding-left: 0;
+    /* padding-right: 0; */
+}
+
+.app-sidebar .second-menu .nav-line-tabs .nav-item .nav-link {
+    font-weight: 500;
+}
+
+.app-sidebar .second-menu .nav-line-tabs .nav-item .nav-link.active {
+    color: var(--bs-text-dark);
+}
+
+.app-sidebar .second-menu .menu-item.menu-accordion.show>.menu-link>.menu-title {
+    font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+    .app-sidebar .second-menu {
+        display: none;
+    }
+}
+
+body.show-second-menu .app-sidebar .second-menu {
+    display: block;
+}
+
+/***** End Second menu *****/
 /***** Menu Icon *****/
-.menu-item .menu-link .menu-icon {
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link .menu-icon {
     margin: 0;
 }
 
-.menu-item .menu-link .menu-icon>img {
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link .menu-icon>img {
     max-width: 24px;
 }
 
-.menu-item .menu-link .menu-icon>img:nth-child(2),
-.menu-item .menu-link .menu-icon>img:nth-child(3),
-.menu-item .menu-link:hover .menu-icon>img:nth-child(1),
-.menu-item .menu-link:hover .menu-icon>img:nth-child(3),
-.menu-item .menu-link.active .menu-icon>img:nth-child(1),
-.menu-item .menu-link.active .menu-icon>img:nth-child(2) {
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link .menu-icon>img:nth-child(2),
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link .menu-icon>img:nth-child(3),
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link:hover .menu-icon>img:nth-child(1),
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link:hover .menu-icon>img:nth-child(3),
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link.active .menu-icon>img:nth-child(1),
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link.active .menu-icon>img:nth-child(2) {
     opacity: 0;
     display: none;
 }
 
-.menu-item .menu-link:hover .menu-icon>img:nth-child(2) {
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link:hover .menu-icon>img:nth-child(2) {
     opacity: 1;
     display: block;
 }
 
-.menu-item .menu-link.active .menu-icon>img:nth-child(3) {
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link.active .menu-icon>img:nth-child(3) {
     opacity: 1;
     display: block;
 }
 
-.menu-item .menu-link.active:hover .menu-icon>img:nth-child(2) {
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link.active:hover .menu-icon>img:nth-child(2) {
     opacity: 0;
     display: none;
 }
 
-.menu-item .menu-link.active .menu-title {
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link.active .menu-title {
     color: #0f4478 !important;
     font-weight: 700;
 }
 
-.menu-item .menu-link:hover .menu-title {
+.app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link:hover .menu-title {
     color: #0f4478 !important;
 }
 
@@ -131,25 +195,31 @@
 /***** End App wrapper *****/
 
 /***** Card *****/
-.card{
+.card {
     transition: .2s box-shadow ease-in-out;
 }
-.card:hover{
-    box-shadow: 0 .5rem 1.5rem .5rem rgba(0,0,0,.075);
+
+.card:hover {
+    box-shadow: 0 .5rem 1.5rem .5rem rgba(0, 0, 0, .075);
 }
-.total-units > i{
+
+.total-units>i {
     opacity: 0;
     transition: .2s all ease-in-out;
 }
-.card:hover .total-units > i{
+
+.card:hover .total-units>i {
     opacity: 1;
 }
+
 /***** End Card *****/
 /***** Select 2 *****/
 .select2-container--bootstrap5 .select2-selection--single .select2-selection__placeholder {
     color: #181818;
 }
+
 .select2-container--bootstrap5 .select2-selection {
     border-width: 2px;
 }
+
 /***** End Select 2 *****/

@@ -1,0 +1,15 @@
+<svg id="Group_425" data-name="Group 425" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="task-list-line-square">
+    <path id="Path_27" data-name="Path 27" d="M24,0H0V24H24Z" fill="none"/>
+    <g id="Group_124" data-name="Group 124">
+      <path id="Path_60" data-name="Path 60" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Line_25" data-name="Line 25" d="M17.75.5h-18A.75.75,0,0,1-1-.25.75.75,0,0,1-.25-1h18a.75.75,0,0,1,.75.75A.75.75,0,0,1,17.75.5Z" transform="translate(3.25 21.25)" fill="#01070d"/>
+      <path id="Path_61" data-name="Path 61" d="M12.75,21.5a.75.75,0,0,1-.75-.75V3.964L5.5,7.214V20.75a.75.75,0,0,1-1.5,0v-14a.75.75,0,0,1,.415-.671l8-4A.75.75,0,0,1,13.5,2.75v18A.75.75,0,0,1,12.75,21.5Z" transform="translate(0.25 0.25)" fill="#01070d"/>
+      <path id="Path_62" data-name="Path 62" d="M18.75,21.5a.75.75,0,0,1-.75-.75v-9.6L12.334,7.374a.75.75,0,0,1,.832-1.248l6,4a.75.75,0,0,1,.334.624v10A.75.75,0,0,1,18.75,21.5Z" transform="translate(0.25 0.25)" fill="#01070d"/>
+      <path id="Line_26" data-name="Line 26" d="M-.25.51A.75.75,0,0,1-1-.24V-.25A.75.75,0,0,1-.25-1,.75.75,0,0,1,.5-.25v.01A.75.75,0,0,1-.25.51Z" transform="translate(9.25 9.25)" fill="#01070d"/>
+      <path id="Line_27" data-name="Line 27" d="M-.25.51A.75.75,0,0,1-1-.24V-.25A.75.75,0,0,1-.25-1,.75.75,0,0,1,.5-.25v.01A.75.75,0,0,1-.25.51Z" transform="translate(9.25 12.25)" fill="#01070d"/>
+      <path id="Line_28" data-name="Line 28" d="M-.25.51A.75.75,0,0,1-1-.24V-.25A.75.75,0,0,1-.25-1,.75.75,0,0,1,.5-.25v.01A.75.75,0,0,1-.25.51Z" transform="translate(9.25 15.25)" fill="#01070d"/>
+      <path id="Line_29" data-name="Line 29" d="M-.25.51A.75.75,0,0,1-1-.24V-.25A.75.75,0,0,1-.25-1,.75.75,0,0,1,.5-.25v.01A.75.75,0,0,1-.25.51Z" transform="translate(9.25 18.25)" fill="#01070d"/>
+    </g>
+  </g>
+</svg>
