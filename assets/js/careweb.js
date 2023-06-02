@@ -1,10 +1,9 @@
-$(document).ready(function () {
-    $("#kt_app_sidebar_toggle").on("click", function(){
-        $("body").toggleClass("show-second-menu");
-        // $(".app-sidebar").css("width","320px");
-    });
+// $(document).ready(function () {
+//     $("#kt_app_sidebar_toggle").on("click", function(){
+//         $("body").toggleClass("show-second-menu");
+//     });
 
-});
+// });
 
 // Apply search 
 $(document).ready(function () {
@@ -75,5 +74,23 @@ $(document).ready(function () {
     preferencesDismissElement.addEventListener("click", function () {
         wrapperElement.classList.remove("d-none");
         preferencesElement.classList.add("d-none");
+    });
+
+    // Init datatable
+    $(".init_datatable").DataTable({
+        "language": {
+            "lengthMenu": "Show _MENU_",
+            "paginate": {
+                "previous": "<i class='fas fa-chevron-left me-5 fs-5'></i> Previous",
+                "next": "Next <i class='fas fa-chevron-right ms-5 fs-5'></i>"
+            }
+        },
+        "dom":
+            "<'table-responsive'tr>" +
+
+            "<'row'" +
+            // "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" +
+            "<'col-sm-12 d-flex align-items-center justify-content-center'p>" +
+            ">"
     });
 });
