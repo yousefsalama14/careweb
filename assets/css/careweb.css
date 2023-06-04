@@ -62,7 +62,6 @@
 @media (min-width: 991.98px) {
     [data-kt-app-layout=light-sidebar] .app-sidebar {
         top: 70px;
-        ;
     }
 
     [data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu.menu-sub-indention {

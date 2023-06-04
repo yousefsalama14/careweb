@@ -1,0 +1,75 @@
+/***** Icons *****/
+.fa-chevron-right:before {
+    content: "\f053";
+}
+
+.fa-chevron-left:before {
+    content: "\f054";
+}
+/***** End Icons *****/
+/***** Header *****/
+[data-kt-app-header-fixed=true][data-kt-app-sidebar-fixed=true][data-kt-app-sidebar-push-header=true] .app-header,
+[data-kt-app-header-fixed=true][data-kt-app-sidebar-sticky=on][data-kt-app-sidebar-push-header=true] .app-header {
+    left: unset;
+    right: 0;
+}
+
+
+@media (min-width: 992px) {
+    .app-container {
+        padding-left: 30px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/***** End Header *****/
+/***** Sidebar *****/
+[data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu.menu-sub-indention {
+    left: unset;
+    right: 0;
+}
+
+/***** End Sidebar *****/
+/***** App wrapper *****/
+@media (min-width: 992px) {
+    [data-kt-app-sidebar-fixed=true] .app-wrapper {
+        margin-left: unset;
+        margin-right: calc(var(--bs-app-sidebar-width) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px) + 15px);
+    }
+}
+
+/***** End App wrapper *****/
+/***** Table *****/
+
+
+/* .table-striped>tbody>tr:nth-of-type(even)>* */
+.table thead tr th:first-child {
+    border-top-left-radius: unset;
+    border-top-right-radius: 8px;
+}
+
+.table thead tr th:last-child {
+    border-top-right-radius: unset;
+    border-top-left-radius: 8px;
+}
+
+.table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: 8px;
+}
+
+.table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: unset;
+    border-bottom-left-radius: 8px;
+}
+
+.page-item:last-child{
+    margin-left: unset;
+    margin-right: 1.5rem;
+}
+.page-item:first-child{
+    margin-right: unset;
+    margin-left: 1.5rem;
+}
+
+/***** End Table *****/
