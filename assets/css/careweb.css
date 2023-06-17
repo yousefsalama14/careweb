@@ -289,3 +289,68 @@ table.dataTable.table-hover>tbody>tr:hover>* {
 }
 
 /***** End Table *****/
+/***** Tabs *****/
+.nav-line-tabs .nav-item .nav-link {
+    font-weight: 600;
+}
+
+.nav-line-tabs .nav-item .nav-link.active,
+.nav-line-tabs .nav-item .nav-link:hover {
+    color: var(--bs-primary);
+    border-bottom-width: 2px !important;
+}
+
+.circle-tabs.nav-line-tabs {
+    border-bottom: 0;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.circle-tabs.nav-line-tabs .nav-item .nav-link {
+    border-bottom: 0;
+    border-radius: 8px;
+    background-color: #9fa8b130;
+    color: #01070D;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #9fa8b130;
+    white-space: nowrap;
+}
+
+.circle-tabs.nav-line-tabs .nav-item .nav-link:hover {
+    border: 1px solid var(--bs-primary) !important;
+    background-color: #ECF5FD;
+}
+
+.circle-tabs.nav-line-tabs .nav-item .nav-link.active {
+    border: 1px solid var(--bs-primary) !important;
+    background-color: #ECF5FD;
+    border-radius: 22px;
+}
+/* Style the entire scrollbar */
+.table-responsive::-webkit-scrollbar ,
+.nav-tabs::-webkit-scrollbar {
+    height: 5px; /* height of the scrollbar */
+  }
+  
+  /* Style the thumb (the draggable part of the scrollbar) */
+  .table-responsive::-webkit-scrollbar-thumb ,
+  .nav-tabs::-webkit-scrollbar-thumb {
+    background-color: var(--bs-primary); /* color of the thumb */
+    border-radius: 10px; /* roundness of the thumb */
+  }
+  
+  /* Style the track (the area behind the thumb) */
+  .table-responsive::-webkit-scrollbar-track ,
+  .nav-tabs::-webkit-scrollbar-track {
+    background-color: transparent; /* color of the track */
+  }
+  
+  /* Style the corner where the vertical and horizontal scrollbars meet */
+  .table-responsive::-webkit-scrollbar-corner ,
+  .nav-tabs::-webkit-scrollbar-corner {
+    background-color: transparent; /* color of the corner */
+  }
+/***** End Tabs *****/
