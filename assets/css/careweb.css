@@ -170,7 +170,8 @@
 /***** App wrapper *****/
 @media (min-width: 992px) {
     [data-kt-app-sidebar-fixed=true] .app-wrapper {
-        margin-left: calc(var(--bs-app-sidebar-width) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px) + 15px);
+        /*margin-left: calc(var(--bs-app-sidebar-width) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px) + 15px);*/
+        margin-left: 80px;
     }
 }
 
@@ -290,6 +291,10 @@ table.dataTable.table-hover>tbody>tr:hover>* {
 
 /***** End Table *****/
 /***** Tabs *****/
+.nav-line-tabs {
+    border-bottom-width: 3px;
+}
+
 .nav-line-tabs .nav-item .nav-link {
     font-weight: 600;
 }
@@ -354,3 +359,80 @@ table.dataTable.table-hover>tbody>tr:hover>* {
     background-color: transparent; /* color of the corner */
   }
 /***** End Tabs *****/
+/***** Custom Tree *****/
+.custom-tree{
+    overflow-x: auto;
+}
+.custom-tree.jstree-default .jstree-open>.jstree-ocl,
+.custom-tree.jstree-default .jstree-closed>.jstree-ocl{
+    background-image: none;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 7px;
+}
+
+.custom-tree.jstree-default .jstree-open>.jstree-ocl:before{
+    content: "\f078";
+}
+
+.custom-tree.jstree-default .jstree-closed>.jstree-ocl:before{
+    content: "\f054";
+}
+
+.custom-tree.jstree-default .jstree-themeicon-custom,
+.custom-tree.jstree-default .jstree-leaf>.jstree-ocl {
+    display: none;
+}
+
+.custom-tree.jstree-default .jstree-icon, .jstree-default .jstree-node {
+    background-image: none;
+}
+
+.custom-tree.jstree-default .jstree-anchor{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    height: auto;
+}
+
+.custom-tree.jstree-default .jstree-leaf .jstree-anchor .jstree-icon{
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 5px;
+    display: inline-block;
+}
+
+.custom-tree.jstree-default .jstree-leaf .jstree-anchor .jstree-icon:before{
+    content: "\f111";
+}
+
+.jstree-default .jstree-open>.jstree-ocl,
+.jstree-default .jstree-open>.jstree-ocl + .jstree-anchor{
+    color: #01070D
+}
+
+.custom-tree.jstree-default .jstree-leaf .jstree-anchor,
+.jstree-default .jstree-closed>.jstree-ocl,
+.jstree-default .jstree-closed>.jstree-ocl + .jstree-anchor{
+    color: #818A93;
+}
+
+.custom-tree.jstree-default .jstree-anchor.jstree-clicked,
+.custom-tree.jstree-default .jstree-anchor.jstree-hovered,
+.custom-tree.jstree-default .jstree-anchor.jstree-clicked i,
+.custom-tree.jstree-default .jstree-anchor.jstree-hovered i{
+    color: #01070D;
+}
+
+.custom-tree.jstree-default .jstree-anchor.jstree-clicked,
+.custom-tree.jstree-default .jstree-anchor.jstree-hovered{
+    background: #9fa8b129;
+    box-shadow: none;
+}
+
+.custom-tree.jstree-default .jstree-anchor.jstree-clicked{
+    font-weight: bold;
+}
+/***** End Custom Tree *****/
