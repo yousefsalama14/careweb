@@ -410,7 +410,11 @@ table.dataTable.table-hover>tbody>tr:hover>* {
 
 .jstree-default .jstree-open>.jstree-ocl,
 .jstree-default .jstree-open>.jstree-ocl + .jstree-anchor{
-    color: #01070D
+    color: #01070D;
+}
+
+.jstree-default .jstree-open>.jstree-ocl + .jstree-anchor{
+    width: 100%;
 }
 
 .custom-tree.jstree-default .jstree-leaf .jstree-anchor,
