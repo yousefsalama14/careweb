@@ -1,8 +1,12 @@
 /***** Main *****/
 :root {
-    --bs-app-sidebar-width: 320px;
+    --bs-app-sidebar-width: 314px;
 }
-
+@media (min-width: 992px){
+    [data-kt-app-sidebar-minimize=on] {
+        --bs-app-sidebar-width: 84px;
+    }
+}
 /***** End Main *****/
 /***** Header *****/
 [data-kt-app-header-fixed=true][data-kt-app-sidebar-fixed=true][data-kt-app-sidebar-push-header=true] .app-header,
@@ -46,11 +50,11 @@
 /***** End Header *****/
 /***** Sidebar *****/
 [data-kt-app-layout=light-sidebar] .app-sidebar {
-    width: 320px;
+    width: 330px;
 }
 
 [data-kt-app-sidebar-minimize="on"] .app-sidebar {
-    width: 80px;
+    width: 100px;
 }
 
 [data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu.menu-sub-indention {
@@ -59,7 +63,7 @@
     bottom: 0;
     left: 0;
     z-index: 101;
-    width: 80px;
+    width: 100px;
     overflow-y: auto;
 }
 
@@ -83,11 +87,14 @@
 [data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link {
     border-radius: 0.475rem;
     flex-direction: column;
+    padding: 0.5rem 1rem;
 }
 
 [data-kt-app-layout=light-sidebar] .app-sidebar .app-sidebar-wrapper>.menu .menu-item .menu-link .menu-title {
     opacity: 1 !important;
     margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
 }
 
 [data-kt-app-layout=light-sidebar] .app-sidebar .menu .menu-item .menu-link .menu-title {
@@ -170,8 +177,8 @@
 /***** App wrapper *****/
 @media (min-width: 992px) {
     [data-kt-app-sidebar-fixed=true] .app-wrapper {
-        /*margin-left: calc(var(--bs-app-sidebar-width) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px) + 15px);*/
-        margin-left: 80px;
+        margin-left: calc(var(--bs-app-sidebar-width) + var(--bs-app-sidebar-gap-start, 0px) + var(--bs-app-sidebar-gap-end, 0px) + 15px);
+        /* margin-left: 100px; */
     }
 }
 
@@ -440,3 +447,37 @@ table.dataTable.table-hover>tbody>tr:hover>* {
     font-weight: bold;
 }
 /***** End Custom Tree *****/
+/***** Second menu *****/
+.app-sidebar .second-menu {
+    margin-left: 100px;
+    padding: 0 5px;
+}
+
+.app-sidebar .second-menu .menu-item .menu-link {
+    padding-left: 0;
+    /* padding-right: 0; */
+}
+
+.app-sidebar .second-menu .nav-line-tabs .nav-item .nav-link {
+    font-weight: 500;
+}
+
+.app-sidebar .second-menu .nav-line-tabs .nav-item .nav-link.active {
+    color: var(--bs-text-dark);
+}
+
+.app-sidebar .second-menu .menu-item.menu-accordion.show>.menu-link>.menu-title {
+    font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+    .app-sidebar .second-menu {
+        display: none;
+    }
+}
+
+body.show-second-menu .app-sidebar .second-menu {
+    display: block;
+}
+
+/***** End Second menu *****/
