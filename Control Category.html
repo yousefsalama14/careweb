@@ -1934,7 +1934,7 @@
                                     <!--begin::Title-->
                                     <h1
                                         class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                                        Organisation</h1>
+                                        Control Category</h1>
                                     <!--end::Title-->
                                     <!--begin::Breadcrumb-->
                                     <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
@@ -1950,7 +1950,7 @@
                                         </li>
                                         <!--end::Item-->
                                         <!--begin::Item-->
-                                        <li class="breadcrumb-item text-muted">Organisation</li>
+                                        <li class="breadcrumb-item text-muted">Control Category</li>
                                         <!--end::Item-->
                                     </ul>
                                     <!--end::Breadcrumb-->
@@ -1978,358 +1978,152 @@
                                 <div class="bg-white py-5 px-10">
                                     <ul class="nav nav-tabs nav-line-tabs">
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab"
-                                                href="#OrganisationLevelTab">Organisation Level</a>
+                                            <a class="nav-link active" data-bs-toggle="tab"
+                                                href="#GeneralControlCategoryTab">General Control Category</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="tab"
-                                                href="#OrganisationHierarchyTab">Organisation Hierarchy</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#ITControlCategoryTab">IT
+                                                Control Category</a>
                                         </li>
-                                        
+
                                     </ul>
                                     <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade" id="OrganisationLevelTab" role="tabpanel">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="pt-5">
-                                                        <h3 class="fw-bold">Organisation Level</h3>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade show active" id="OrganisationHierarchyTab"
+                                        <div class="tab-pane fade show active" id="GeneralControlCategoryTab"
                                             role="tabpanel">
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="pt-5">
-                                                        <form data-kt-search-element="form" class="position-relative w-100 mb-10">
-                                                            <input type="text" class="form-control ps-14" name="search" value="" placeholder="Search" data-kt-search-element="input">
-                                                            <i class="ki-duotone ki-magnifier fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-4" style="z-index: 6;">
-                                                                <span class="path1"></span>
-                                                                <span class="path2"></span>
-                                                            </i>
-                                                        </form>
-                                                        <div id="kt_docs_jstree_basic" class="custom-tree">
+                                                        <div class="d-flex align-items-center mb-10">
+                                                            <form data-kt-search-element="form"
+                                                                class="position-relative w-100">
+                                                                <input type="text" class="form-control ps-14"
+                                                                    name="search" value="" placeholder="Search"
+                                                                    data-kt-search-element="input">
+                                                                <i class="ki-duotone ki-magnifier fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-4"
+                                                                    style="z-index: 6;">
+                                                                    <span class="path1"></span>
+                                                                    <span class="path2"></span>
+                                                                </i>
+                                                            </form>
+                                                            <a href="#" class="btn fw-bold btn-primary ms-3 p-3">
+                                                                <i class="las la-compress-arrows-alt p-0 fs-1"></i>
+                                                                <!-- <i class="bi bi-arrows-fullscreen p-0 fs-1"></i> -->
+                                                            </a>
+                                                        </div>
+                                                        <div id="kt_docs_jstree_basic" class="custom-tree single-level">
                                                             <ul>
-                                                                <li>
-                                                                    UK Demo
+                                                                <li data-jstree='{ "opened" : true }'>
+                                                                    General
                                                                     <ul>
-                                                                        <li data-jstree='{ "opened" : true }'>
-                                                                            HKB Holding Group
-                                                                            <ul>
-                                                                                <li>
-                                                                                    HKB Bank
-                                                                                    <ul>
-                                                                                        <li>
-                                                                                            <span class="w-100 d-inline-flex align-items-center">Electronic Banking
-                                                                                                <i class="ki-duotone ki-plus ms-auto fs-2 text-primary"  data-bs-toggle="modal" data-bs-target="#kt_modal_1"></i>
-                                                                                            </span> 
-                                                                                            
-                                                                                            <ul>
-                                                                                                <li data-jstree='{ "selected" : true }'>
-                                                                                                    Credit
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    Retail Banking
-                                                                                                </li>
-                                                                                                <li>
-                                                                                                    International Operations
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                                <li data-jstree='{ "opened" : true }'>
-                                                                                    HKB Company
-                                                                                    <ul>
-                                                                                        <li>
-                                                                                            Sales
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            Purchases
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            Human Resources
-                                                                                        </li>
-                                                                                        <li>
-                                                                                            Finance
-                                                                                            <ul>
-                                                                                                <li>1</li>
-                                                                                                <li>1</li>
-                                                                                                <li>1</li>
-                                                                                                <li>1</li>
-                                                                                            </ul>
-                                                                                        </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                                <li>
-                                                                                    HKB Investments
-                                                                                    <ul>
-                                                                                        <li>2</li>
-                                                                                        <li>2</li>
-                                                                                        <li>2</li>
-                                                                                        <li>2</li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                                <li>
-                                                                                    HKB Insurance
-                                                                                    <ul>
-                                                                                        <li>3</li>
-                                                                                        <li>3</li>
-                                                                                        <li>3</li>
-                                                                                        <li>3</li>
-                                                                                    </ul>
-                                                                                </li>
-                                                                            </ul>
+                                                                        <li data-jstree='{ "selected" : true }'>
+                                                                            <span
+                                                                                class="w-100 d-inline-flex align-items-center">Payments
+                                                                                <div class="ms-auto d-flex gap-2">
+                                                                                    <i
+                                                                                        class="ki-duotone ki-trash fs-4 text-danger p-1 border border-danger rounded-3 border-2">
+                                                                                        <i class="path1"></i>
+                                                                                        <i class="path2"></i>
+                                                                                        <i class="path3"></i>
+                                                                                        <i class="path4"></i>
+                                                                                        <i class="path5"></i>
+                                                                                    </i>
+                                                                                    <i
+                                                                                        class="ki-duotone ki-pencil fs-4 text-primary p-1 border border-primary rounded-3 border-2">
+                                                                                        <i class="path1"></i>
+                                                                                        <i class="path2"></i>
+                                                                                    </i>
+                                                                                </div>
+                                                                            </span>
                                                                         </li>
+                                                                        <li>System</li>
+                                                                        <li>Add Sub Risk</li>
                                                                     </ul>
                                                                 </li>
+                                                                <li data-jstree='{ "opened" : true }'>
+                                                                    Financial Control
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span
+                                                                                class="w-100 d-inline-flex align-items-center">IT
+                                                                                Financial
+                                                                            </span>
+                                                                        </li>
+                                                                        <li>HR Financial</li>
+                                                                        <li>Management Financial</li>
+                                                                        <li>Add Sub Risk</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    Strategic Control
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span
+                                                                                class="w-100 d-inline-flex align-items-center">Credit
+                                                                                Risk
+                                                                            </span>
+                                                                        </li>
+                                                                        <li>Legal/Regulatory Risk</li>
+                                                                        <li>Add Sub Risk</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    Underwriting Control
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span
+                                                                                class="w-100 d-inline-flex align-items-center">Financial
+                                                                                Risk
+                                                                            </span>
+                                                                        </li>
+                                                                        <li>HR Risk</li>
+                                                                        <li>IT Risk</li>
+                                                                        <li>Add Sub Risk</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>Add New Risk</li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <div class="card shadow-none border-start border-3 border-0 ps-10 rounded-0 pt-5">
-                                                        <div class="card-header p-0 border-0 mb-5">
-                                                            <h3 class="card-title align-items-start flex-column">
-                                                                <span
-                                                                    class="card-label fw-bold text-gray-800">Credit</span>
-                                                                <span
-                                                                    class="text-gray-400 mt-1 fw-semibold fs-6">Function</span>
-                                                            </h3>
-                                                            <div class="card-toolbar">
-                                                                <div
-                                                                    class="d-flex align-items-center gap-2 gap-lg-3 ms-auto">
-                                                                    <!--begin::Secondary button-->
-                                                                    <a href="#"
-                                                                        class="btn btn-sm fw-bold bg-white btn-color-danger border border-2">
-                                                                        <i class="ki-duotone ki-trash fs-2">
-                                                                            <i class="path1"></i>
-                                                                            <i class="path2"></i>
-                                                                            <i class="path3"></i>
-                                                                            <i class="path4"></i>
-                                                                            <i class="path5"></i>
-                                                                        </i>
-                                                                        Delete</a>
-                                                                    <!--end::Secondary button-->
-                                                                    <!--begin::Primary button-->
-                                                                    <a href="#" class="btn btn-sm fw-bold btn-primary">
-                                                                        <i class="ki-duotone ki-plus fs-2"></i>
-                                                                        Add</a>
-                                                                    <!--end::Primary button-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body p-0">
-                                                            <!--begin::Search-->
-                                                            <form data-kt-search-element="form" class="w-100 mb-10">
-                                                                <div class="input-group position-relative">
-                                                                    <input type="text" class="form-control ps-14"
-                                                                        name="search" value=""
-                                                                        placeholder="Search for Entity..."
-                                                                        data-kt-search-element="input">
-                                                                    <i
-                                                                        class="ki-duotone ki-magnifier fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-4" style="z-index: 6;">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </i>
-                                                                    <span class="input-group-text">
-                                                                        <a href="#" class="btn btn-link btn-color-muted p-0">
-                                                                            <i class="ki-duotone ki-filter-tick fs-2 me-1">
-                                                                                <i class="path1"></i>
-                                                                                <i class="path2"></i>
-                                                                            </i>
-                                                                            Filter</a>
-                                                                    </span>
-                                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="ITControlCategoryTab" role="tabpanel">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="pt-5">
+                                                        <p class="mb-5">IT Control Framework </p>
+                                                        <div class="d-flex align-items-center mb-5">
+                                                            <form data-kt-search-element="form"
+                                                                class="position-relative w-100">
+                                                                <input type="text" class="form-control ps-14"
+                                                                    name="search" value="" placeholder="Search"
+                                                                    data-kt-search-element="input">
+                                                                <i class="ki-duotone ki-magnifier fs-2 text-gray-500 position-absolute top-50 translate-middle-y ms-4"
+                                                                    style="z-index: 6;">
+                                                                    <span class="path1"></span>
+                                                                    <span class="path2"></span>
+                                                                </i>
                                                             </form>
-                                                            <!--end::Search-->
-                                                            <!--begin::Table-->
-                                                            <div class="table-responsive">
-                                                                <table
-                                                                    class="table table-hover table-rounded table-striped table-row-bordered border align-middle gy-3 gs-3">
-                                                                    <!--begin::Table head-->
-                                                                    <thead>
-                                                                        <tr
-                                                                            class="fs-7 fw-bold text-gray-400 border-bottom-0">
-                                                                            <th class="text-start">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                                                                </div>
-                                                                            </th>
-                                                                            <th class="py-3 min-w-175px text-start">
-                                                                                Name
-                                                                            </th>
-                                                                            <th
-                                                                                class="py-3 min-w-125px text-start pe-12">
-                                                                                Location
-                                                                            </th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <!--end::Table head-->
-                                                                    <!--begin::Table body-->
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="pe-0">
-                                                                                <div class="form-check form-check-sm">
-                                                                                    <input class="form-check-input" type="checkbox" value="" id="" />
-                                                                                </div>
-                                                                            </td>
-                                                                            <td class="">
-                                                                                Finance And Planning Division
-                                                                            </td>
-                                                                            <td class="">
-                                                                                HKB Bank
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                    <!--end::Table body-->
-                                                                </table>
-                                                            </div>
-                                                            <div class="row">
-                                                                <div
-                                                                    class="col-sm-12 d-flex align-items-center justify-content-center">
-                                                                    <div class="dataTables_paginate paging_simple_numbers"
-                                                                        id="DataTables_Table_0_paginate">
-                                                                        <ul class="pagination">
-                                                                            <li class="paginate_button page-item previous disabled"
-                                                                                id="DataTables_Table_0_previous"><a
-                                                                                    href="#"
-                                                                                    aria-controls="DataTables_Table_0"
-                                                                                    data-dt-idx="0" tabindex="0"
-                                                                                    class="page-link"><i
-                                                                                        class="fas fa-chevron-left me-5 fs-5"></i>
-                                                                                    Previous</a></li>
-                                                                            <li
-                                                                                class="paginate_button page-item active">
-                                                                                <a href="#"
-                                                                                    aria-controls="DataTables_Table_0"
-                                                                                    data-dt-idx="1" tabindex="0"
-                                                                                    class="page-link">1</a>
-                                                                            </li>
-                                                                            <li class="paginate_button page-item "><a
-                                                                                    href="#"
-                                                                                    aria-controls="DataTables_Table_0"
-                                                                                    data-dt-idx="2" tabindex="0"
-                                                                                    class="page-link">2</a></li>
-                                                                            <li class="paginate_button page-item next"
-                                                                                id="DataTables_Table_0_next"><a href="#"
-                                                                                    aria-controls="DataTables_Table_0"
-                                                                                    data-dt-idx="3" tabindex="0"
-                                                                                    class="page-link">Next <i
-                                                                                        class="fas fa-chevron-right ms-5 fs-5"></i></a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--end::Table-->
+                                                            <a href="#" class="btn fw-bold btn-primary ms-3 p-3">
+                                                                <!-- <i class="las la-compress-arrows-alt p-0 fs-1"></i> -->
+                                                                <i class="bi bi-arrows-fullscreen p-0 fs-1"></i>
+                                                            </a>
                                                         </div>
+                                                        <select class="form-select mb-5" aria-label="Select Framework">
+                                                            <option>NIST Framework</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <a href="#"
+                                                            class="btn btn-link btn-color-muted btn-active-color-primary mb-5 fs-7 d-flex align-items-center">
+                                                            <i class="fas fa-plus me-1 fs-5"></i> Add New Frame Work
+                                                        </a>
                                                     </div>
+                                                </div>
+                                                <div class="col-md-8">
                                                 </div>
                                             </div>
                                         </div>
@@ -2395,25 +2189,26 @@
         <!--end::Modal dialog-->
     </div>
     <!--end::Modal - Example-->
-    
-                                                                                                
+
+
     <div class="modal fade" tabindex="-1" id="kt_modal_1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title">Modal title</h3>
-    
+
                     <!--begin::Close-->
-                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                    <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal"
+                        aria-label="Close">
                         <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
                     </div>
                     <!--end::Close-->
                 </div>
-    
+
                 <div class="modal-body">
                     <p>Modal body text goes here.</p>
                 </div>
-    
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
@@ -2437,21 +2232,21 @@
     <script src="assets/js/widgets.bundle.js"></script>
     <script>
         $('#kt_docs_jstree_basic').jstree({
-    "core" : {
-        "themes" : {
-            "responsive": false
-        }
-    },
-    "types" : {
-        "default" : {
-            "icon": false
-        },
-        "file" : {
-            "icon": false
-        }
-    },
-    "plugins": ["types"]
-});
+            "core": {
+                "themes": {
+                    "responsive": false
+                }
+            },
+            "types": {
+                "default": {
+                    "icon": false
+                },
+                "file": {
+                    "icon": false
+                }
+            },
+            "plugins": ["types"]
+        });
     </script>
     <!--end::Custom Javascript-->
     <!--end::Javascript-->

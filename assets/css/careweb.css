@@ -2,11 +2,13 @@
 :root {
     --bs-app-sidebar-width: 314px;
 }
-@media (min-width: 992px){
+
+@media (min-width: 992px) {
     [data-kt-app-sidebar-minimize=on] {
         --bs-app-sidebar-width: 84px;
     }
 }
+
 /***** End Main *****/
 /***** Header *****/
 [data-kt-app-header-fixed=true][data-kt-app-sidebar-fixed=true][data-kt-app-sidebar-push-header=true] .app-header,
@@ -341,37 +343,45 @@ table.dataTable.table-hover>tbody>tr:hover>* {
     background-color: #ECF5FD;
     border-radius: 22px;
 }
+
 /* Style the entire scrollbar */
-.table-responsive::-webkit-scrollbar ,
+.table-responsive::-webkit-scrollbar,
 .nav-tabs::-webkit-scrollbar {
-    height: 5px; /* height of the scrollbar */
-  }
-  
-  /* Style the thumb (the draggable part of the scrollbar) */
-  .table-responsive::-webkit-scrollbar-thumb ,
-  .nav-tabs::-webkit-scrollbar-thumb {
-    background-color: var(--bs-primary); /* color of the thumb */
-    border-radius: 10px; /* roundness of the thumb */
-  }
-  
-  /* Style the track (the area behind the thumb) */
-  .table-responsive::-webkit-scrollbar-track ,
-  .nav-tabs::-webkit-scrollbar-track {
-    background-color: transparent; /* color of the track */
-  }
-  
-  /* Style the corner where the vertical and horizontal scrollbars meet */
-  .table-responsive::-webkit-scrollbar-corner ,
-  .nav-tabs::-webkit-scrollbar-corner {
-    background-color: transparent; /* color of the corner */
-  }
+    height: 5px;
+    /* height of the scrollbar */
+}
+
+/* Style the thumb (the draggable part of the scrollbar) */
+.table-responsive::-webkit-scrollbar-thumb,
+.nav-tabs::-webkit-scrollbar-thumb {
+    background-color: var(--bs-primary);
+    /* color of the thumb */
+    border-radius: 10px;
+    /* roundness of the thumb */
+}
+
+/* Style the track (the area behind the thumb) */
+.table-responsive::-webkit-scrollbar-track,
+.nav-tabs::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* color of the track */
+}
+
+/* Style the corner where the vertical and horizontal scrollbars meet */
+.table-responsive::-webkit-scrollbar-corner,
+.nav-tabs::-webkit-scrollbar-corner {
+    background-color: transparent;
+    /* color of the corner */
+}
+
 /***** End Tabs *****/
 /***** Custom Tree *****/
-.custom-tree{
+/* .custom-tree {
     overflow-x: auto;
 }
+
 .custom-tree.jstree-default .jstree-open>.jstree-ocl,
-.custom-tree.jstree-default .jstree-closed>.jstree-ocl{
+.custom-tree.jstree-default .jstree-closed>.jstree-ocl {
     background-image: none;
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
@@ -380,11 +390,11 @@ table.dataTable.table-hover>tbody>tr:hover>* {
     margin-top: 7px;
 }
 
-.custom-tree.jstree-default .jstree-open>.jstree-ocl:before{
+.custom-tree.jstree-default .jstree-open>.jstree-ocl:before {
     content: "\f078";
 }
 
-.custom-tree.jstree-default .jstree-closed>.jstree-ocl:before{
+.custom-tree.jstree-default .jstree-closed>.jstree-ocl:before {
     content: "\f054";
 }
 
@@ -393,17 +403,18 @@ table.dataTable.table-hover>tbody>tr:hover>* {
     display: none;
 }
 
-.custom-tree.jstree-default .jstree-icon, .jstree-default .jstree-node {
+.custom-tree.jstree-default .jstree-icon,
+.jstree-default .jstree-node {
     background-image: none;
 }
 
-.custom-tree.jstree-default .jstree-anchor{
+.custom-tree.jstree-default .jstree-anchor {
     padding-top: .5rem;
     padding-bottom: .5rem;
     height: auto;
 }
 
-.custom-tree.jstree-default .jstree-leaf .jstree-anchor .jstree-icon{
+.custom-tree.jstree-default .jstree-leaf .jstree-anchor .jstree-icon {
     font-family: "Font Awesome 6 Free" !important;
     font-weight: 900;
     font-style: normal;
@@ -411,41 +422,145 @@ table.dataTable.table-hover>tbody>tr:hover>* {
     display: inline-block;
 }
 
-.custom-tree.jstree-default .jstree-leaf .jstree-anchor .jstree-icon:before{
+.custom-tree.jstree-default .jstree-leaf .jstree-anchor .jstree-icon:before {
     content: "\f111";
 }
 
 .jstree-default .jstree-open>.jstree-ocl,
-.jstree-default .jstree-open>.jstree-ocl + .jstree-anchor{
+.jstree-default .jstree-open>.jstree-ocl+.jstree-anchor {
     color: #01070D;
 }
 
-.jstree-default .jstree-open>.jstree-ocl + .jstree-anchor{
+.jstree-default .jstree-open>.jstree-ocl+.jstree-anchor {
     width: 100%;
 }
 
 .custom-tree.jstree-default .jstree-leaf .jstree-anchor,
 .jstree-default .jstree-closed>.jstree-ocl,
-.jstree-default .jstree-closed>.jstree-ocl + .jstree-anchor{
+.jstree-default .jstree-closed>.jstree-ocl+.jstree-anchor {
     color: #818A93;
 }
 
 .custom-tree.jstree-default .jstree-anchor.jstree-clicked,
 .custom-tree.jstree-default .jstree-anchor.jstree-hovered,
 .custom-tree.jstree-default .jstree-anchor.jstree-clicked i,
-.custom-tree.jstree-default .jstree-anchor.jstree-hovered i{
+.custom-tree.jstree-default .jstree-anchor.jstree-hovered i {
     color: #01070D;
 }
 
 .custom-tree.jstree-default .jstree-anchor.jstree-clicked,
-.custom-tree.jstree-default .jstree-anchor.jstree-hovered{
+.custom-tree.jstree-default .jstree-anchor.jstree-hovered {
     background: #9fa8b129;
     box-shadow: none;
 }
 
-.custom-tree.jstree-default .jstree-anchor.jstree-clicked{
+.custom-tree.jstree-default .jstree-anchor.jstree-clicked {
     font-weight: bold;
 }
+
+.single-level.jstree-default .jstree-open>.jstree-ocl:before {
+    content: "\f0d7";
+}
+
+.single-level.jstree-default .jstree-open>.jstree-ocl+.jstree-anchor {
+    width: auto;
+}
+
+.single-level.custom-tree.jstree-default .jstree-leaf .jstree-anchor {
+    display: flex;
+}
+
+.single-level.jstree-default .jstree-anchor.jstree-clicked,
+.single-level.jstree-default .jstree-anchor.jstree-hovered {
+    background-color: rgba(35, 145, 234, .06);
+    color: #646B72;
+    font-weight: normal;
+}
+
+.single-level.jstree-default .jstree-anchor.jstree-clicked i,
+.single-level.jstree-default .jstree-anchor.jstree-hovered i {
+    color: unset;
+}
+
+.single-level.jstree-default .jstree-node.jstree-last>.jstree-anchor {
+    color: #CECECE;
+}
+
+.single-level.jstree-default .jstree-node.jstree-last>.jstree-anchor .jstree-icon {
+    font-size: 12px;
+    color: #CECECE;
+}
+
+.single-level.jstree-default .jstree-node.jstree-last>.jstree-anchor .jstree-icon:before {
+    content: "\2b";
+} */
+
+.custom-tree .jstree-node {
+    background-image: none;
+    position: relative;
+}
+
+.jstree-node .jstree-anchor {
+    color: #01070D;
+    box-shadow: none;
+    padding: 10px 10px 10px 34px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.jstree-node .jstree-anchor.jstree-hovered,
+.jstree-node .jstree-anchor.jstree-clicked {
+    background: rgba(35, 145, 234, 0.06);
+}
+
+.jstree-node .jstree-icon.jstree-ocl {
+    color: #01070D;
+    position: absolute;
+    left: 0;
+}
+
+.jstree-node.jstree-leaf .jstree-anchor,
+.jstree-node.jstree-leaf .jstree-icon.jstree-ocl {
+    color: #646B72;
+}
+
+.single-level .jstree-node.jstree-leaf.jstree-last .jstree-anchor,
+.single-level .jstree-node.jstree-leaf.jstree-last .jstree-icon.jstree-ocl {
+    color: #CECECE;
+}
+
+.jstree-node .jstree-ocl {
+    background-image: none;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-size: 12px;
+    padding: 10px 0;
+    height: auto !important;
+}
+
+.jstree-node.jstree-leaf .jstree-ocl {
+    font-size: 9px;
+}
+
+.jstree-node.jstree-open>.jstree-ocl:before {
+    content: "\f078";
+}
+
+.jstree-node.jstree-closed>.jstree-ocl:before {
+    content: "\f054";
+}
+
+.jstree-node.jstree-leaf .jstree-icon.jstree-ocl:before {
+    content: "\f111";
+}
+
+.single-level .jstree-node.jstree-leaf.jstree-last .jstree-icon.jstree-ocl:before {
+    content: "\2b";
+    font-size: 14px;
+}
+
 /***** End Custom Tree *****/
 /***** Second menu *****/
 .app-sidebar .second-menu {
